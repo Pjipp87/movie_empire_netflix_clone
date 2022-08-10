@@ -15,13 +15,16 @@ font-family: 'Paytone One', sans-serif;
 
 .logoName {
   font-family: "Alegreya Sans SC", sans-serif;
-  color: red;
+  background: -webkit-linear-gradient(0deg, white, red, red, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 100%;
+  background-position: 200% 0;
   font-size: 10em;
   padding: 0;
   margin: 0;
-  text-shadow: 1px 1px 5px white, -1px -1px 5px whitesmoke;
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
+  animation: gradientAnimation 2s;
+  -webkit-animation: gradientAnimation 2s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -39,5 +42,27 @@ font-family: 'Paytone One', sans-serif;
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes gradientAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }/*# sourceMappingURL=WelcomeScreen.css.map */
