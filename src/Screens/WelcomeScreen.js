@@ -1,5 +1,6 @@
-import logo from "../Assets/images/logo.svg";
 import "../Styles/WelcomeScreen.css";
+import { EnterButton } from "../Components/Buttons";
+
 //import axios from "axios";
 
 function WelcomeScreen() {
@@ -17,7 +18,8 @@ function WelcomeScreen() {
   return (
     <div className="App">
       <h1 className="logoName">MovieEmpire</h1>
-      <button>Los</button>
+
+      <EnterButton to={"/home"}>Los</EnterButton>
     </div>
   );
 }
