@@ -16,7 +16,7 @@ function WelcomeScreen() {
  */
   return (
     <div className="App">
-      <img src={logo} width="30%"></img>
+      <h1 className="logoName">MovieEmpire</h1>
       <button>Los</button>
     </div>
   );
