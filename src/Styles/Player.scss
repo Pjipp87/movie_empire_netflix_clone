@@ -1,0 +1,131 @@
+.player {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: black;
+
+  .trailerInfo {
+    align-self: flex-start;
+    left: 0;
+    top: 0;
+    //height: 30em;
+    padding: 1em;
+    color: white;
+    position: absolute;
+    width: 40%;
+    box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.8);
+    //background-color: blue;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    .infoIconContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 3em;
+      color: beige;
+      width: 5em;
+      padding-top: 4em;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+
+      b {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .trailerPlayer {
+    box-shadow: 0px 5px 5px grey;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .buttonRow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .trailerContainer {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .fadeOut {
+    animation: fadeOut 1s;
+    -webkit-animation: fadeOut 1s;
+    opacity: 0;
+  }
+  .fadeIn {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fullscreenPlayerContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2em 3em;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+
+  .fullscreenIconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3em;
+    color: beige;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
+
+    b {
+      padding-top: 10px;
+    }
+  }
+}
+
+.containerFullscreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
