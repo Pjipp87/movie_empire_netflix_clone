@@ -14,6 +14,9 @@ import {
 } from "react-icons/bs";
 import { VscDebugRestart } from "react-icons/vsc";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { MovieDB } from "../_data/MovieDB";
+import { useSelector, useDispatch } from "react-redux";
+import { increaseMovieNumber, decreaseMovieNumber } from "../Context/DB_Slice";
 
 export const Player = () => {
   const [isplaying, setIsplaying] = useState(false);
@@ -26,6 +29,11 @@ export const Player = () => {
   const fullscreenHandle = useFullScreenHandle();
   const [isMuted, setIsMuted] = useState(false);
   const [curserShown, setCurserShown] = useState("unset");
+  const initialMovieNumber = useSelector((state) => state.movie.value);
+  const movieDBLength = useSelector((state) => state.movie.DB_Length);
+  //const [MovieDBArr, setMovieDBArr] = useState(MovieDB);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setWidth(playerDiv.current.offsetWidth);
@@ -62,7 +70,7 @@ export const Player = () => {
       setShow(false);
       clearTimeout(timer);
       setCurserShown("none");
-    }, 2000);
+    }, 5000);
   };
 
   const _toggleFullscreenMode = () => {
@@ -73,6 +81,18 @@ export const Player = () => {
     if (!fullscreenHandle.active) {
       fullscreenHandle.enter();
       setCurserShown("none");
+    }
+  };
+
+  const _increase = () => {
+    if (initialMovieNumber < movieDBLength - 1) {
+      dispatch(increaseMovieNumber());
+    }
+  };
+
+  const _decrease = () => {
+    if (initialMovieNumber > 0) {
+      dispatch(decreaseMovieNumber());
     }
   };
 
@@ -89,12 +109,12 @@ export const Player = () => {
               muted={isMuted}
               ref={playerRef}
               height={fullscreenHandle.active ? "100%" : "fit-content"}
-              //width={fullscreenHandle.active ? "100%" : width}
-              width={fullscreenHandle.active ? "100%" : "100%"}
+              width={fullscreenHandle.active ? "100%" : width}
+              //width={fullscreenHandle.active ? "100%" : "100%"}
               className={`trailerPlayer`}
               playing={isplaying}
               controls={false}
-              url="https://archive.org/download/turner_video_391170/391170.mp4"
+              url={MovieDB[initialMovieNumber].trailer}
             ></ReactPlayer>
             {fullscreenHandle.active ? (
               <div
@@ -147,18 +167,13 @@ export const Player = () => {
           className={`trailerInfo ${show ? "fadeIn" : "fadeOut"}`}
           style={{ height: height }}
         >
-          <h1>Iron Man</h1>
+          <h1>{MovieDB[initialMovieNumber].name}</h1>
+          <p>{MovieDB[initialMovieNumber].description}</p>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Initial Number: {initialMovieNumber} | Länge: {movieDBLength}
           </p>
+          <button onClick={() => _increase()}>+</button>
+          <button onClick={() => _decrease()}>-</button>
           <div className="buttonRow">
             {isplaying ? (
               <div
