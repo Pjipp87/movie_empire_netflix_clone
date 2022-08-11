@@ -3,4 +3,7 @@
   background-color: black;
   color: white;
   display: flex;
+}
+.homeScreen .main {
+  width: 100%;
 }/*# sourceMappingURL=HomeScreen.css.map */

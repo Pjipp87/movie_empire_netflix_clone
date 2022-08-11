@@ -1,0 +1,110 @@
+.startPage {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.startPage .trailerInfo {
+  align-self: flex-start;
+  left: 0;
+  top: 0;
+  height: 30em;
+  padding: 1em;
+  color: white;
+  position: absolute;
+  width: 40%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.startPage .trailerInfo .infoIconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7em;
+  color: beige;
+}
+.startPage .trailerInfo .infoIconContainer:hover {
+  cursor: pointer;
+  color: white;
+}
+.startPage .trailerInfo .infoIconContainer b {
+  padding-top: 10px;
+}
+.startPage .trailerPlayer {
+  box-shadow: 0px 5px 5px grey;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.startPage .buttonRow {
+  display: flex;
+  flex-direction: row;
+}
+.startPage .trailerContainer {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.startPage .fadeOut {
+  animation: fadeOut 1s;
+  -webkit-animation: fadeOut 1s;
+  opacity: 0;
+}
+.startPage .fadeIn {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fill-window {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}/*# sourceMappingURL=Startpage.css.map */

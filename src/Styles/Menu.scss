@@ -1,6 +1,6 @@
 .menu {
   background-color: black;
-  color: green;
+  z-index: 5;
   width: fit-content;
   min-height: 100vh;
   border-right: 1px solid wheat;
@@ -9,6 +9,7 @@
   flex-direction: column;
   padding: 0 0.5em;
   align-items: center;
+  position: relative;
 
   h1 {
     font-family: "Alegreya Sans SC", sans-serif;

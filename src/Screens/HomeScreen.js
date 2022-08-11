@@ -7,9 +7,9 @@ export const HomeScreen = () => {
   return (
     <div className="homeScreen">
       <Menu></Menu>
-      <main>
+      <div className="main">
         <Outlet></Outlet>
-      </main>
+      </div>
     </div>
   );
 };
