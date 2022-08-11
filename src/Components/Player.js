@@ -53,6 +53,15 @@ export const Player = () => {
   const _restart = () => {
     playerRef.current.seekTo(7, "seconds");
   };
+
+  const _showPlayerControl = () => {
+    setShow(true);
+    const timer = setTimeout(() => {
+      setShow(false);
+      clearTimeout(timer);
+    }, 2000);
+  };
+
   return (
     <div ref={playerDiv} className="player">
       <div
@@ -61,7 +70,7 @@ export const Player = () => {
         onMouseLeave={_setHideInfo}
       >
         <FullScreen handle={fullscreenHandle}>
-          <div className="containerFullscreen">
+          <div className="containerFullscreen" onMouseMove={_showPlayerControl}>
             <ReactPlayer
               muted={isMuted}
               ref={playerRef}
@@ -74,7 +83,11 @@ export const Player = () => {
               url="https://archive.org/download/turner_video_391170/391170.mp4"
             ></ReactPlayer>
             {fullscreenHandle.active ? (
-              <div className="fullscreenPlayerContainer">
+              <div
+                className={`fullscreenPlayerContainer ${
+                  show ? "fadeIn" : "fadeOut"
+                }`}
+              >
                 {isplaying ? (
                   <div
                     className="fullscreenIconContainer"
