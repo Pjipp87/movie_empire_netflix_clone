@@ -25,6 +25,7 @@ export const Player = () => {
   const [initialShow, setinitialShow] = useState(true);
   const fullscreenHandle = useFullScreenHandle();
   const [isMuted, setIsMuted] = useState(false);
+  const [curserShown, setCurserShown] = useState("unset");
 
   useEffect(() => {
     setWidth(playerDiv.current.offsetWidth);
@@ -56,14 +57,27 @@ export const Player = () => {
 
   const _showPlayerControl = () => {
     setShow(true);
+    setCurserShown("unset");
     const timer = setTimeout(() => {
       setShow(false);
       clearTimeout(timer);
+      setCurserShown("none");
     }, 2000);
   };
 
+  const _toggleFullscreenMode = () => {
+    if (fullscreenHandle.active) {
+      fullscreenHandle.exit();
+      setCurserShown("unset");
+    }
+    if (!fullscreenHandle.active) {
+      fullscreenHandle.enter();
+      setCurserShown("none");
+    }
+  };
+
   return (
-    <div ref={playerDiv} className="player">
+    <div ref={playerDiv} className="player" style={{ cursor: curserShown }}>
       <div
         className="trailerContainer"
         onMouseEnter={_setShowInfo}
@@ -121,7 +135,7 @@ export const Player = () => {
                 <div className="fullscreenIconContainer">
                   <BsFullscreenExit
                     size="2em"
-                    onClick={fullscreenHandle.exit}
+                    onClick={_toggleFullscreenMode}
                   />
                 </div>
               </div>
@@ -168,7 +182,7 @@ export const Player = () => {
               <VscDebugRestart size={"2em"} />
               <b>Neustart</b>
             </div>
-            <div className="infoIconContainer" onClick={fullscreenHandle.enter}>
+            <div className="infoIconContainer" onClick={_toggleFullscreenMode}>
               <BsArrowsFullscreen size={"2em"} />
               <b>Vollbild</b>
             </div>
