@@ -62,7 +62,7 @@ export const Startpage = () => {
         onMouseLeave={_setHideInfo}
       >
         <FullScreen handle={fullscreenHandle}>
-          <div style={{ position: "relative", width: "100%", height: "100%" }}>
+          <div className="containerFullscreen">
             <ReactPlayer
               muted={isMuted}
               ref={playerRef}
@@ -74,50 +74,40 @@ export const Startpage = () => {
               url="https://archive.org/download/turner_video_391170/391170.mp4"
             ></ReactPlayer>
             {fullscreenHandle.active ? (
-              <div
-                //className={`trailerInfo ${show ? "fadeIn" : "fadeOut"}`}
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  width: "100%",
-                  display: "flex",
-                  flexDirection: "row",
-                  padding: "1em 5em",
-                }}
-              >
+              <div className="fullscreenPlayerContainer">
                 {isplaying ? (
                   <div
-                    className="infoIconContainer"
+                    className="fullscreenIconContainer"
                     onClick={() => setIsplaying(!isplaying)}
                   >
-                    <BsPauseCircle size={"5em"} />
+                    <BsPauseCircle size={"2em"} />
                   </div>
                 ) : (
                   <div
-                    className="infoIconContainer"
+                    className="fullscreenIconContainer"
                     onClick={() => setIsplaying(!isplaying)}
                   >
-                    <BsPlayCircle size={"5em"} />
+                    <BsPlayCircle size={"2em"} />
                   </div>
                 )}
                 {isMuted ? (
-                  <div className="infoIconContainer">
+                  <div className="fullscreenIconContainer">
                     <BsVolumeMuteFill
-                      size="5em"
+                      size="2em"
                       onClick={() => setIsMuted(!isMuted)}
                     />
                   </div>
                 ) : (
-                  <div className="infoIconContainer">
+                  <div className="fullscreenIconContainer">
                     <BsVolumeUpFill
-                      size="5em"
+                      size="2em"
                       onClick={() => setIsMuted(!isMuted)}
                     />
                   </div>
                 )}
-                <div className="infoIconContainer">
+                <div className="fullscreenIconContainer">
                   <BsFullscreenExit
-                    size="5em"
+                    size="2em"
                     onClick={fullscreenHandle.exit}
                   />
                 </div>

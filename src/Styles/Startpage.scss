@@ -11,7 +11,7 @@
     align-self: flex-start;
     left: 0;
     top: 0;
-    height: 30em;
+    //height: 30em;
     padding: 1em;
     color: white;
     position: absolute;
@@ -30,8 +30,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 7em;
+      margin-right: 3em;
       color: beige;
+      width: 5em;
+      padding-top: 4em;
 
       &:hover {
         cursor: pointer;
@@ -93,10 +95,36 @@
   }
 }
 
-.fill-window {
-  height: 100%;
+.fullscreenPlayerContainer {
   position: absolute;
-  left: 0;
+  bottom: 0;
   width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 2em 3em;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+
+  .fullscreenIconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3em;
+    color: beige;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+    }
+
+    b {
+      padding-top: 10px;
+    }
+  }
+}
+
+.containerFullscreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
