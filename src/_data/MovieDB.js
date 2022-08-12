@@ -1,29 +1,57 @@
 export const MovieDB = [
   {
-    name: "Iron Man",
+    name: "Captain America: The First Avenger",
     id: 1,
+    cover: "/src/Assets/images/Covers/Captain_America_The_First_Avenger.jpg",
+    trailer:
+      "http://videos.hd-trailers.net/Captain_America_The_First_Avenger_Trailer_C_5.1-1080p-HDTN.mp4",
+    description:
+      "1942: Die USA ziehen in den Kampf gegen Hitler-Deutschland. Steve Rogers meldet sich freiwillig zur Armee, wird aber aufgrund seines schwächlichen Gesundheitszustands als ungeeignet eingestuft. Mit Hilfe des `Project: Rebirth' soll er trotzdem in den Kampf gegen die Nazis ziehen. Der kränkliche Steve wird in einen Super-Soldaten namens Captain America transformiert. Gleichzeitig versucht sich bei den Nazis auch Johann Schmidt daran, mit einer Geheimwaffe den Rest der Welt zu unterjochen.",
+  },
+  {
+    name: "Captain Marvel",
+    id: 2,
+    cover: "/src/Assets/images/Covers/Captain_Marvel.jpg",
+    trailer:
+      "https://movietrailers.apple.com/movies/marvel/captain-marvel/captain-marvel-trailer-1_h1080p.mov",
+    description:
+      "Vers alias Captain Marvel ist eine Soldatin, die von den hoch entwickelten Kree ausgebildet wurde. Nach einem Kampf im Weltraum stürzt sie auf die Erde ab. Gerade noch hat sie für die Sicherheit im All gekämpft, nun ist sie auf einem fremden Planeten, der ihr dennoch sehr vertraut vorkommt. Visionen und Träume plagen sie und deuten auf ein früheres Leben auf der Erde hin. Zusammen mit dem jungen S.H.I.E.L.D.-Agenten Nick Fury versucht sie, das Geheimnis ihrer Herkunft zu entschlüsseln.",
+  },
+
+  {
+    name: "Iron Man",
+    id: 3,
     cover: "/src/Assets/images/Covers/Iron_Man.jpg",
     trailer:
       "http://trailers.apple.com/movies/paramount/iron_man/iron_man-tlr1_h1080p.mov",
     description:
-      "From Marvel Studios and Paramount Pictures comes Iron Man, an action-packed take on the tale of wealthy philanthropist Tony Stark (Robert Downey Jr.), who develops an invulnerable robotic suit to fight the throes of evil. In addition to being filthy rich, billionaire industrialist Tony Stark is also a genius inventor. When Stark is kidnapped and forced to build a diabolical weapon, he instead uses his intelligence and ingenuity to construct an indestructible suit of armor and escape his captors. Once free, Stark discovers a deadly conspiracy that could destabilize the entire globe, and dons his powerful new suit on a mission to stop the villains and save the world. Gwyneth Paltrow co-stars as his secretary, Virginia 'Pepper' Potts, while Terrence Howard fills the role of Jim 'Rhodey' Rhodes, one of Stark's colleagues, whose military background leads him to help in the formation of the suit. Jon Favreau directs, with Marvel movie veterans Avi Arad and Kevin Feige producing. - Jeremy Wheeler, Rovi",
-  },
-  {
-    name: "The Incredible Hulk",
-    id: 2,
-    cover: "/src/Assets/images/Covers/The_Incredible_Hulk.jpg",
-    trailer:
-      "http://trailers.apple.com/movies/universal/the_incredible_hulk/the_incredible_hulk-tlr1_h1080p.mov",
-    description:
-      "'The Incredible Hulk' kicks off an all-new, explosive and action-packed epic of one of the most popular Super Heroes of all time. In this new beginning, scientist Bruce Banner (Edward Norton) desperately hunts for a cure to the gamma radiation that poisoned his cells and unleashes the unbridled force of rage within him: The Hulk.Living in the shadows--cut off from a life he knew and the woman he loves, Betty Ross (Liv Tyler)--Banner struggles to avoid the obsessive pursuit of his nemesis, General Thunderbolt Ross (William Hurt), and the military machinery that seeks to capture him and brutally exploit his power. As all three grapple with the secrets that led to The Hulk's creation, they are confronted with a monstrous new adversary known as The Abomination (Tim Roth), whose destructive strength exceeds even The Hulk's own. And on June 13, 2008, one scientist must make an agonizing final choice: accept a peaceful life as Bruce Banner or find heroism in the creature he holds inside",
+      "Tony Stark, reicher Erbe des Technologie-Konzerns Stark Industries, wird in Afghanistan gefangen genommen. Mit einer selbst gebauten Rüstung kann er fliehen. Zurück in Amerika will er die Waffenverkäufe seines Unternehmens beenden. Der langjährige Geschäftspartner seines Vaters Obadia Stane ist gegen Tonys Vorschläge. Als sich Tony wieder mehr in das Alltagsgeschäft einmischt, entdeckt er dunkle Geheimnisse seines Unternehmens.",
   },
   {
     name: "Iron Man 2",
-    id: 3,
+    id: 4,
     cover: "/src/Assets/images/Covers/Iron_Man_2.jpg",
     trailer:
       "http://videos.hd-trailers.net/Iron_Man_2_The_IMAX_Experience_Trailer-1080p.mp4",
     description:
-      "Paramount Pictures and Marvel Entertainment present the highly anticipated sequel to the blockbuster film based on the legendary Marvel Super Hero “Iron Man”, reuniting director Jon Favreau and Oscar nominee Robert Downey Jr. In “Iron Man 2”, the world is aware that billionaire inventor Tony Stark (Robert Downey Jr.) is the armored Super Hero Iron Man. Under pressure from the government, the press and the public to share his technology with the military, Tony is unwilling to divulge the secrets behind the Iron Man armor because he fears the information will slip into the wrong hands. With Pepper Potts (Gwyneth Paltrow), and James “Rhodey” Rhodes (Don Cheadle) at his side, Tony forges new alliances and confronts powerful new forces.",
+      "Iron Man Tony Stark gibt sich der Welt als selbiger zu erkennen, was jedoch die Regierung auf den Plan ruft. Stark wird unter Druck gesetzt, seine Technologie für die Herstellung einer neuen Generation von Waffen preiszugeben. Er weigert sich, verfolgt aber weiterhin den Weltfrieden. Doch der Minireaktor in seinem Körper droht ihn von innen zu vergiften. Gleichzeitig muss Stark sich weiterhin gegen die Bösewichte der Welt wappnen, die hinter ihm her sind.",
+  },
+  {
+    name: "The Incredible Hulk",
+    id: 5,
+    cover: "/src/Assets/images/Covers/The_Incredible_Hulk.jpg",
+    trailer:
+      "http://trailers.apple.com/movies/universal/the_incredible_hulk/the_incredible_hulk-tlr1_h1080p.mov",
+    description:
+      "Weil er bei einem Experiment zu viele Gammastrahlen abgekriegt hat, schlummert in Forscher Bruce Banner ein Monster. Banner verwandelt sich in den grünen Riesen Hulk, sobald er sich aufregt. Während Banner gegen das Wesen in sich ankämpft, will das Militär Hulks Kraft nutzen. Um ihn zu fangen, schickt General Ross ihm mit dem Soldaten Blonsky ein noch stärkeres Mutations-Monster auf den Hals. Verzweifelt versucht Hulk, Blonsky aufzuhalten.",
+  },
+  {
+    name: "Thor",
+    id: 6,
+    cover: "/src/Assets/images/Covers/Thor.jpg",
+    trailer:
+      "http://trailers.apple.com/movies/paramount/thor/thor-tlr1_h1080p.mov",
+    description:
+      "Thor ist ein nordischer Donnergott, der von seinem Göttervater Odin aufgrund einer hinterhältigen Intrige vom fernen Asgard auf die Erde verbannt wird. Dort lernt der mächtige, aber arrogante Hüne, was es wirklich braucht, um einer der größten Superhelden zu sein. Mit Hilfe seines gigantischen Hammers Mjölnir wird Thor zu einem der größten Beschützer der Menschheit. Die Astrophysikerin Jane Foster hilft ihm bei seinen Versuchen, wieder nach Asgard zurückzukehren.",
   },
 ];
