@@ -1,0 +1,20 @@
+.swiperElement {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+.swiperElement img {
+  border: 2px solid black;
+}
+.swiperElement img:hover {
+  border: 2px solid white;
+}
+
+.bla {
+  width: 50em;
+}
+
+.bla2 {
+  width: 50em;
+}/*# sourceMappingURL=SwiperFrame.css.map */

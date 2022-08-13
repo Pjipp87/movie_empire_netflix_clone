@@ -18,7 +18,7 @@ import { MovieDB } from "../_data/MovieDB";
 import { useSelector, useDispatch } from "react-redux";
 import { increaseMovieNumber, decreaseMovieNumber } from "../Context/DB_Slice";
 
-export const Player = () => {
+export const Player = (props) => {
   const [isplaying, setIsplaying] = useState(false);
   const playerDiv = useRef(null);
   const playerRef = useRef(null);
@@ -39,6 +39,8 @@ export const Player = () => {
     setWidth(playerDiv.current.offsetWidth);
     setHeight(playerRef.current.offsetHeight);
     setIsplaying(true);
+
+    console.log("Main:", props.width);
     playerRef.current.seekTo(7, "seconds");
     const timer = setTimeout(() => {
       setinitialShow(false);

@@ -83,7 +83,7 @@ export const MovieDB = [
   {
     name: "The Return of the First Avenger",
     id: 10,
-    cover: require("../Assets/images/Covers/Return_of_tehe_First_Avenger.jpg"),
+    cover: require("../Assets/images/Covers/The_Return_of_the_First_Avenger.webp"),
     trailer:
       "https://movietrailers.apple.com/movies/marvel/captainamericathewintersoldier/captainamerica2-tlr2_a720p.m4v#t=54.273306",
     description:

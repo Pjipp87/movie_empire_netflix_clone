@@ -1,60 +1,64 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Zoom,
+  EffectFade,
+} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/zoom";
+import "swiper/css/a11y";
+import "swiper/css/effect-fade";
+
 import { MovieDB as DB } from "../_data/MovieDB";
-import { useState } from "react";
-import { Image } from "primereact/image";
-import { Carousel } from "primereact/carousel";
+import { useState, useRef } from "react";
 
-export const SwiperFrame = () => {
+import "../Styles/SwiperFrame.css";
+
+export const SwiperFrame = (props) => {
   const [movieDB, setMovieDB] = useState(DB);
-
-  const itemTemplate = (product) => {
-    <Image
-      //src={require(element.cover)}
-      src={require(product.cover)}
-      alt="Cover"
-      template="Preview Content"
-    ></Image>;
-  };
+  const swipeContainer = useRef(0);
 
   return (
-    <div>
-      {/*  <Carousel value={movieDB} itemTemplate={itemTemplate}></Carousel> */}
+    <div ref={swipeContainer}>
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, A11y, Zoom, EffectFade]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={5}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         //onSwiper={(swiper) => console.log(swiper)}
         onSwiper={() => console.log(movieDB[0].cover.toString())}
         onSlideChange={() => console.log("slide change")}
+        style={{ width: props.width }}
       >
         {movieDB.map((element, index) => {
           return (
             <SwiperSlide key={index}>
-              <div style={{ backgroundColor: "green" }}>
-                <Image
+              <div
+                className="swiperElement"
+                onClick={() => alert(element.name + " ausgewält")}
+              >
+                <img
                   //src={require(element.cover)}
                   src={element.cover}
                   alt="Cover"
-                  template="Preview Content"
-                ></Image>
-                <h1>{element.cover}</h1>
+                  width={"350px"}
+                  height={"500px"}
+                ></img>
+                <p>{element.name}</p>
               </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
-      {/* <img
-        src={"Covers/Captain_America_The_First_Avenger.jpg"}
-        width="100em"
-        alt="test"
-      /> */}
     </div>
   );
 };
