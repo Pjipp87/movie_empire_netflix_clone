@@ -106,7 +106,9 @@ export const Player = () => {
         <FullScreen handle={fullscreenHandle}>
           <div className="containerFullscreen" onMouseMove={_showPlayerControl}>
             <ReactPlayer
-              muted={isMuted}
+              //muted={isMuted}
+              // TODO: replace "muted"
+              muted={true}
               ref={playerRef}
               height={fullscreenHandle.active ? "100%" : "fit-content"}
               width={fullscreenHandle.active ? "100%" : width}

@@ -2,7 +2,7 @@ export const MovieDB = [
   {
     name: "Captain America: The First Avenger",
     id: 1,
-    cover: "/src/Assets/images/Covers/Captain_America_The_First_Avenger.jpg",
+    cover: "../Assets/images/Covers/Captain_America_The_First_Avenger.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/paramount/captainamerica/captainamerica-tlr1_h1080p.mov",
     description:
@@ -11,7 +11,7 @@ export const MovieDB = [
   {
     name: "Captain Marvel",
     id: 2,
-    cover: "/src/Assets/images/Covers/Captain_Marvel.jpg",
+    cover: "../Assets/images/Covers/Captain_Marvel.jpg",
     trailer:
       "https://movietrailers.apple.com/movies/marvel/captain-marvel/captain-marvel-trailer-1_h1080p.mov",
     description:
@@ -21,7 +21,7 @@ export const MovieDB = [
   {
     name: "Iron Man",
     id: 3,
-    cover: "/src/Assets/images/Covers/Iron_Man.jpg",
+    cover: "../Assets/images/Covers/Iron_Man.jpg",
     trailer:
       "http://trailers.apple.com/movies/paramount/iron_man/iron_man-tlr1_h1080p.mov",
     description:
@@ -30,7 +30,7 @@ export const MovieDB = [
   {
     name: "Iron Man 2",
     id: 4,
-    cover: "/src/Assets/images/Covers/Iron_Man_2.jpg",
+    cover: "../Assets/images/Covers/Iron_Man_2.jpg",
     trailer:
       "http://videos.hd-trailers.net/Iron_Man_2_The_IMAX_Experience_Trailer-1080p.mp4",
     description:
@@ -39,7 +39,7 @@ export const MovieDB = [
   {
     name: "The Incredible Hulk",
     id: 5,
-    cover: "/src/Assets/images/Covers/The_Incredible_Hulk.jpg",
+    cover: "../Assets/images/Covers/The_Incredible_Hulk.jpg",
     trailer:
       "http://trailers.apple.com/movies/universal/the_incredible_hulk/the_incredible_hulk-tlr1_h1080p.mov",
     description:
@@ -48,7 +48,7 @@ export const MovieDB = [
   {
     name: "Thor",
     id: 6,
-    cover: "/src/Assets/images/Covers/Thor.jpg",
+    cover: "../Assets/images/Covers/Thor.jpg",
     trailer:
       "http://trailers.apple.com/movies/paramount/thor/thor-tlr1_h1080p.mov",
     description:
@@ -57,7 +57,7 @@ export const MovieDB = [
   {
     name: "The Avengers",
     id: 7,
-    cover: "/src/Assets/images/Covers/The_Avengers.jpg",
+    cover: "../Assets/images/Covers/The_Avengers.jpg",
     trailer:
       "http://trailers.apple.com/movies/marvel/theavengers/avengers-tlr1_h1080p.mov",
     description:
@@ -66,7 +66,7 @@ export const MovieDB = [
   {
     name: "Iron Man 3",
     id: 8,
-    cover: "/src/Assets/images/Covers/Iron_Man_3.jpg",
+    cover: "../Assets/images/Covers/Iron_Man_3.jpg",
     trailer:
       "http://trailers.apple.com/movies/marvel/ironman3/ironman3-tlr1-m4mb0_h1080p.mov",
     description:
@@ -75,7 +75,7 @@ export const MovieDB = [
   {
     name: "Thor - The Dark Kindom",
     id: 9,
-    cover: "/src/Assets/images/Covers/Thor_The_Dark_Kingdom.jpg",
+    cover: "../Assets/images/Covers/Thor_The_Dark_Kingdom.jpg",
     trailer: "http://videos.hd-trailers.net/Thor2_TLR-1-1080p-HDTN.mp4",
     description:
       "Astrophysikerin Jane Foster entdeckt eine gefährliche, mysteriöse Substanz. Als diese von ihr Besitz ergreift, macht sich Thor auf, um sie zu retten. Aber auch der diabolische Malekith ist hinter der Substanz her, um mit ihren Kräften das Universum zu unterwerfen. Thor muss sich mit seinem sinistren Adoptivbruder Loki verbünden, um den Bösewichtern zu zeigen, wo der Hammer hängt. Bald aber ist er nicht mehr sicher, auf wessen Seite Loki steht.",
@@ -83,7 +83,7 @@ export const MovieDB = [
   {
     name: "The Return of the First Avenger",
     id: 10,
-    cover: "/src/Assets/images/Covers/Return_of_tehe_First_Avenger.jpg",
+    cover: "../Assets/images/Covers/Return_of_tehe_First_Avenger.jpg",
     trailer:
       "https://movietrailers.apple.com/movies/marvel/captainamericathewintersoldier/captainamerica2-tlr2_a720p.m4v#t=54.273306",
     description:
@@ -92,7 +92,7 @@ export const MovieDB = [
   {
     name: "Guardiens of the Galaxy",
     id: 11,
-    cover: "/src/Assets/images/Covers/Guardiens_of_the_Galaxy.jpg",
+    cover: "../Assets/images/Covers/Guardiens_of_the_Galaxy.jpg",
     trailer: "http://videos.hd-trailers.net/gotg-tlr1-1080p.mp4",
     description:
       "Peter Quill ist nicht der umgänglichste Vertreter der Spezies Mensch. Doch er hat dafür Gründe: Als Kind wurde er von Aliens unter der Führung des Weltraumpiraten Yondu Udonta entführt. Als Erinnerung bleibt ihm nur eine Kassette mit den Lieblingssongs seiner Mutter. Als Star Lord reist er nun durch das Weltall und trifft auf andere Außenseiter. Sie gründen unter seiner Führung die `Guardians of the Galaxy' und wollen gemeinsam den Weltraum schützen, der in großer Gefahr ist.",
@@ -100,7 +100,7 @@ export const MovieDB = [
   {
     name: "Guardiens of the Galaxy Vol.2",
     id: 12,
-    cover: "/src/Assets/images/Covers/Guardiens_of_the_Galaxy_vol_2.jpg",
+    cover: "../Assets/images/Covers/Guardiens_of_the_Galaxy_vol_2.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/guardians-of-the-galaxy-vol-2/guardians-of-the-galaxy-vol-2-trailer-2_h1080p.mov",
     description:
@@ -109,7 +109,7 @@ export const MovieDB = [
   {
     name: "Avengers: Age of Ultron",
     id: 13,
-    cover: "/src/Assets/images/Covers/The_Avengers_Age_of_Ultron.jpg",
+    cover: "../Assets/images/Covers/The_Avengers_Age_of_Ultron.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/avengersageofultron/avengersageofultron-tlr1_h1080p.mov",
     description:
@@ -118,7 +118,7 @@ export const MovieDB = [
   {
     name: "Ant-Man",
     id: 14,
-    cover: "/src/Assets/images/Covers/Ant_Man.jpeg",
+    cover: "../Assets/images/Covers/Ant_Man.jpeg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/antman/antman-tlr2_h1080p.mov",
     description:
@@ -127,7 +127,7 @@ export const MovieDB = [
   {
     name: "The First Avenger: Civil War",
     id: 15,
-    cover: "/src/Assets/images/Covers/The_First_Avenger_Civil_War.jpg",
+    cover: "../Assets/images/Covers/The_First_Avenger_Civil_War.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/captainamericacivilwar/captainamericacivilwar-tlr1_h1080p.mov",
     description:
@@ -136,7 +136,7 @@ export const MovieDB = [
   {
     name: "Black Panther",
     id: 16,
-    cover: "/src/Assets/images/Covers/Black_Panther.jpg",
+    cover: "../Assets/images/Covers/Black_Panther.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/black-panther/black-panther-trailer-1_h1080p.mov",
     description:
@@ -145,7 +145,7 @@ export const MovieDB = [
   {
     name: "Spider-Man: Homecoming",
     id: 17,
-    cover: "/src/Assets/images/Covers/Spiderman_Homecoming.jpg",
+    cover: "../Assets/images/Covers/Spiderman_Homecoming.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/sony_pictures/spiderman-homecoming/spiderman-homecoming-trailer-1_h1080p.mov",
     description:
@@ -154,7 +154,7 @@ export const MovieDB = [
   {
     name: "Doctor Strange",
     id: 18,
-    cover: "/src/Assets/images/Covers/Doctor_Strange.jpg",
+    cover: "../Assets/images/Covers/Doctor_Strange.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/marvelsdoctorstrange/doctor-strange-tlr2_h1080p.mov",
     description:
@@ -163,7 +163,7 @@ export const MovieDB = [
   {
     name: "Thor: Tag der Entscheidung",
     id: 19,
-    cover: "/src/Assets/images/Covers/Thor_Ragnarok.jpg",
+    cover: "../Assets/images/Covers/Thor_Ragnarok.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/thor-ragnarok/thor-ragnarok-trailer-1_h1080p.mov",
     description:
@@ -172,7 +172,7 @@ export const MovieDB = [
   {
     name: "Ant-Man and the Wasp",
     id: 20,
-    cover: "/src/Assets/images/Covers/Ant_Man_and_the_Wasp.jpg",
+    cover: "../Assets/images/Covers/Ant_Man_and_the_Wasp.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/ant-man-and-the-wasp/ant-man-and-the-wasp-trailer-1-usca_h1080p.mov",
     description:
@@ -181,7 +181,7 @@ export const MovieDB = [
   {
     name: "Avengers: Infinity War",
     id: 21,
-    cover: "/src/Assets/images/Covers/Avengers_Infinity_War.jpg",
+    cover: "../Assets/images/Covers/Avengers_Infinity_War.jpg",
     trailer:
       "http://movietrailers.apple.com/movies/marvel/avengers-infinity-war/avengers-infinity-war-trailer-1_h1080p.mov",
     description:
@@ -190,7 +190,7 @@ export const MovieDB = [
   {
     name: "Avengers: Endgame",
     id: 22,
-    cover: "/src/Assets/images/Covers/Avengers_Endgame.jpg",
+    cover: "../Assets/images/Covers/Avengers_Endgame.jpg",
     trailer:
       "https://movietrailers.apple.com/movies/marvel/avengers-endgame/avengers-endgame-trailer-1_h1080p.mov",
     description:
@@ -199,7 +199,7 @@ export const MovieDB = [
   {
     name: "Spider-Man: Far From home",
     id: 23,
-    cover: "/src/Assets/images/Covers/Spiderman_Far_From_Home.jpg",
+    cover: "../Assets/images/Covers/Spiderman_Far_From_Home.jpg",
     trailer:
       "https://movietrailers.apple.com/movies/sony_pictures/spider-man-far-from-home/spider-man-far-from-home-trailer-1_h1080p.mov",
     description:
