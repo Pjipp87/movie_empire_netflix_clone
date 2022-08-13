@@ -15,7 +15,8 @@ export const DB_Slice = createSlice({
       state.value -= 1;
     },
     setMovieNumber: (state, action) => {
-      state.value += action.payload;
+      console.log("store:", action.payload);
+      state.value = action.payload;
     },
   },
 });

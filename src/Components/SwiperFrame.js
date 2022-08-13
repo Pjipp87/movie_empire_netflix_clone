@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Zoom,
-  EffectFade,
-} from "swiper";
+import { Navigation, Pagination, A11y, Zoom, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,6 +8,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/zoom";
 import "swiper/css/a11y";
 import "swiper/css/effect-fade";
+import { setMovieNumber } from "../Context/DB_Slice";
+import { useDispatch } from "react-redux";
 
 import { MovieDB as DB } from "../_data/MovieDB";
 import { useState, useRef } from "react";
@@ -24,6 +19,7 @@ import "../Styles/SwiperFrame.css";
 export const SwiperFrame = (props) => {
   const [movieDB, setMovieDB] = useState(DB);
   const swipeContainer = useRef(0);
+  const dispatch = useDispatch();
 
   return (
     <div ref={swipeContainer}>
@@ -44,7 +40,7 @@ export const SwiperFrame = (props) => {
             <SwiperSlide key={index}>
               <div
                 className="swiperElement"
-                onClick={() => alert(element.name + " ausgewält")}
+                onClick={() => dispatch(setMovieNumber(element.id - 1))}
               >
                 <img
                   //src={require(element.cover)}
