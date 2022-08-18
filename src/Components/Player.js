@@ -17,6 +17,7 @@ import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import { MovieDB } from "../_data/MovieDB";
 import { useSelector, useDispatch } from "react-redux";
 import { increaseMovieNumber, decreaseMovieNumber } from "../Context/DB_Slice";
+import { addToList } from "../Context/MyListSlice";
 
 export const Player = (props) => {
   const [isplaying, setIsplaying] = useState(false);
@@ -205,7 +206,14 @@ export const Player = (props) => {
               <BsArrowsFullscreen size={"2em"} />
               <b>Vollbild</b>
             </div>
-            <div className="infoIconContainer">
+            <div
+              className="infoIconContainer"
+              onClick={() => {
+                dispatch(
+                  addToList(JSON.stringify(MovieDB[initialMovieNumber].name))
+                );
+              }}
+            >
               <BsPlusLg size={"2em"} />
               <b>Zur Liste</b>
             </div>

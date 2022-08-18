@@ -16,7 +16,7 @@ import { useState, useRef } from "react";
 
 import "../Styles/SwiperFrame.css";
 
-export const SwiperFrame = (props) => {
+export const MovieSwiper = (props) => {
   const [movieDB, setMovieDB] = useState(DB);
   const swipeContainer = useRef(0);
   const dispatch = useDispatch();
