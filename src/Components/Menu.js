@@ -8,12 +8,12 @@ export const Menu = () => {
     <div className="menu">
       <h1>MovieEmpire</h1>
       <div className="menuButtonContainer">
-        <SearchField type="text"></SearchField>
         <MenuButton to={"/home"}>Startseite</MenuButton>
         <MenuButton to={"/home/movies"}>Filme</MenuButton>
         <MenuButton to={"/home/series"}>Serien</MenuButton>
         <MenuButton to={"/home/myList"}>Meine Liste</MenuButton>
         <MenuButton to={"/home/news"}>Neuerscheinungen</MenuButton>
+        <MenuButton to={"/home/search"}>Suche</MenuButton>
       </div>
       <MenuButton to={"/home/profile"} className="profileButton">
         Mein Profil

@@ -7,6 +7,7 @@ import { Series } from "./Screens/Series";
 import { News } from "./Screens/News";
 import { MyList } from "./Screens/MyList";
 import { Profile } from "./Screens/Profile";
+import { Search } from "./Screens/Search";
 
 function App() {
   /* 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/home/news" element={<News />} />
         <Route path="/home/mylist" element={<MyList />} />
         <Route path="/home/profile" element={<Profile />} />
+        <Route path="/home/search" element={<Search />} />
       </Route>
     </Routes>
   );

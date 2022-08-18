@@ -110,7 +110,7 @@ export const Player = (props) => {
             <ReactPlayer
               //muted={isMuted}
               // TODO: replace "muted"
-              muted={true}
+              muted={isMuted}
               ref={playerRef}
               height={fullscreenHandle.active ? "100%" : "fit-content"}
               width={fullscreenHandle.active ? "100%" : width}
